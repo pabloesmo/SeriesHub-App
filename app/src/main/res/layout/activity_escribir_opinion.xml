@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EscribirOpinion">
+
+    <ImageButton
+        android:id="@+id/escribir_op_compartir"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/black"
+        android:contentDescription="Boton de búsqueda"
+        android:src="@drawable/send"
+        app:layout_constraintBottom_toBottomOf="@+id/escribir_op_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/escribir_op_titulo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/escribir_op_res"
+        android:layout_width="317dp"
+        android:layout_height="729dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="top|start"
+        android:hint="@string/hint_escribir_op"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <TextView
+        android:id="@+id/escribir_op_titulo"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:gravity="center|left"
+        android:text="Comentario:"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/escribir_op_res"
+        app:layout_constraintEnd_toStartOf="@+id/escribir_op_compartir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <!--ImageButton
+        android:id="@+id/boton_casa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_home_24"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintHorizontal_bias="0.05"/-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

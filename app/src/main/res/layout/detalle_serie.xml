@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SerieEspecifica">
+
+    <ImageButton
+        android:id="@+id/boton_compartir"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Descripción del botón compartir"
+        android:src="@drawable/compartir_peque"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <TextView
+        android:id="@+id/serie_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="TITULO"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/serie_foto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.2"
+        tools:ignore="TextSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/serie_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PUNTUACION"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/serie_foto"
+        app:layout_constraintTop_toTopOf="@id/serie_title"
+        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:drawableLeft="@drawable/estrella"
+        android:drawablePadding="5dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/serie_idioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/serie_foto"
+        app:layout_constraintTop_toTopOf="@id/serie_title"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.06"
+        android:drawableLeft="@drawable/usa"
+        android:drawablePadding="5dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/donde_ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donde ver:"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintVertical_bias="0.82"
+        tools:ignore="TextSizeCheck" />
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="290dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65">
+
+        <TextView
+            android:id="@+id/serie_resumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESUMEN"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            tools:ignore="TextSizeCheck" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/serie_foto"
+        android:layout_width="130dp"
+        android:layout_height="190dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.10" />
+
+    <ImageView
+        android:id="@+id/imagen_web"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/google"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/donde_ver"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.2"/>
+
+    <ImageButton
+        android:id="@+id/me_gusta_boton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_favorite_24"
+        android:layout_margin="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Descripción del botón compartir"
+        app:layout_constraintVertical_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

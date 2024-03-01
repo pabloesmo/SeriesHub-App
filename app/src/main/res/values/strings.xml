@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Projecto</string>
+    <string name="hint_buscar"><i>Buscar...</i></string>
+    <string name="hint_escribir_op"><i>Escriba aquí...</i></string>
+</resources>
